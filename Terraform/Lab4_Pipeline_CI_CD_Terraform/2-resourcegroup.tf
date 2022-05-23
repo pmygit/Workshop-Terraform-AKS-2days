@@ -11,4 +11,9 @@
 resource "azurerm_resource_group" "Terra_tfbackend_rg" {
   name     = var.resourceGroupName
   location = var.azureRegion
+  tags = {
+    GBL-BU = "DIA"
+    GBL-CLIENT = "COEXYA"
+    GBL-OWNER = "Philippe MARGUERY"
+  }
 }
